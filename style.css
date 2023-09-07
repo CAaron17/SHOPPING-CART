@@ -1,0 +1,178 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #232526;
+  background: -webkit-linear-gradient(to right, #414345, #232526);
+  background: linear-gradient(to right, #414345, #232526);
+}
+header {
+  width: 100%;
+  position: relative;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  background-color: #232526;
+}
+nav {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  color: rgb(255, 255, 255);
+}
+nav .logo h2 {
+  font-size: 1.5em;
+}
+nav .car-shop .car-img {
+  width: 40px;
+  height: 40px;
+  color: rgb(255, 255, 255);
+}
+h1 {
+  font-size: 2.5em;
+  text-align: center;
+  margin: 30px 0;
+  color: rgb(255, 255, 255);
+}
+
+/* *************************************************************** */
+
+.container-products {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  column-gap: 40px;
+}
+.container-products .product {
+  width: 18%;
+  background-color: #53636a;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin: 20px;
+  transition: all 0.5s ease;
+}
+.container-products .product:hover {
+  background-color: rgb(250, 250, 250);
+}
+.container-products .product img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.container-products .product h2 {
+  font-size: 1.5em;
+}
+.container-products .product .info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container-products .product .info p {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+.container-products .product .info .info-icon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  background-color: red;
+  padding: 10px;
+  border-radius: 50%;
+}
+.container-products .product .info .info-icon:hover {
+  background-color: rgb(0, 250, 0);
+}
+
+/* ********************************************************* */
+.car-list.invisible {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease-out;
+}
+.car-list {
+  position: absolute;
+  height: auto;
+  width: 315px;
+  background-color: #232526;
+  right: 0;
+  top: 50px;
+  color: rgb(255, 255, 255);
+  transition: all 0.5s ease-in;
+  z-index: 100;
+}
+.car-list .delete-cart {
+  position: relative;
+  left: 280px;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  color: rgb(0, 0, 0);
+  border-radius: 50%;
+  padding: 2px;
+  cursor: pointer;
+}
+.car-list .delete-cart:hover {
+  background-color: rgb(255, 0, 0);
+}
+.car-list h2 {
+  text-align: center;
+}
+.cart-elements {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+.element {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 5px;
+  margin: 10px 0;
+}
+.cart-elements .element img {
+  width: 80px;
+  height: 80px;
+}
+.cart-elements .element .info-element {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+.cart-elements .element .info-element .price-container {
+  display: flex;
+  gap: 10px;
+}
+.cart-elements .element .info-element .price-container input {
+  width: 30%;
+}
+.car-list .total {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+.car-list .btn {
+  width: 50%;
+  margin: auto;
+  margin-bottom: 20px;
+}

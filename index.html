@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="buttons.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <title>CAR-SHOP</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <h2>ELECTRONIC SHOP</h2>
+        </div>
+        <a href="" class="car-shop">
+          <ion-icon name="cart-outline" class="car-img" id="car-img"></ion-icon>
+        </a>
+      </nav>
+      <div class="car-list invisible" id="car-list">
+        <ion-icon
+          name="close-outline"
+          class="delete-cart"
+          id="delete-cart"
+        ></ion-icon>
+
+        <h2>YOUR CART</h2>
+        <div class="cart-elements"></div>
+        <hr />
+        <p class="total" id="total">Total: $0</p>
+        <button class="btn"></button>
+      </div>
+    </header>
+
+    <h1>ELECTRONIC SHOP PRODUCTOS</h1>
+
+    <div class="container-products">
+      <div class="product">
+        <img src="img/item1.png" alt="Apple Watch" />
+        <h2>Apple Watch SE (1st Gen)</h2>
+        <div class="info">
+          <p>$50</p>
+          <ion-icon name="cart-outline" class="info-icon" id="btn1"></ion-icon>
+        </div>
+      </div>
+      <div class="product">
+        <img src="img/item2.png" alt="Apple Macbook" />
+        <h2>Apple MacBook Pro</h2>
+        <div class="info">
+          <p>$100</p>
+          <ion-icon name="cart-outline" class="info-icon" id="btn2"></ion-icon>
+        </div>
+      </div>
+      <div class="product">
+        <img src="img/item3.png" alt="Smartphone" />
+        <h2>Samsung Galaxy S22</h2>
+        <div class="info">
+          <p>$150</p>
+          <ion-icon name="cart-outline" class="info-icon" id="btn3"></ion-icon>
+        </div>
+      </div>
+      <div class="product">
+        <img src="img/item4.png" alt="Samsung Galaxy" />
+        <h2>Samsung Galaxy Z Flip 4</h2>
+        <div class="info">
+          <p>$200</p>
+          <ion-icon name="cart-outline" class="info-icon" id="btn4"></ion-icon>
+        </div>
+      </div>
+      <div class="product">
+        <img src="img/item5.png" alt="Iphone 14" />
+        <h2>Iphone 14 Pro Max</h2>
+        <div class="info">
+          <p>$250</p>
+          <ion-icon name="cart-outline" class="info-icon" id="btn5"></ion-icon>
+        </div>
+      </div>
+      <div class="product">
+        <img src="img/item6.png" alt="PS5" />
+        <h2>PlayStation 5</h2>
+        <div class="info">
+          <p>$300</p>
+          <ion-icon name="cart-outline" class="info-icon" id="btn6"></ion-icon>
+        </div>
+      </div>
+      <div class="product">
+        <img src="img/item7.png" alt="Xbox One" />
+        <h2>Xbox One S</h2>
+        <div class="info">
+          <p>$350</p>
+          <ion-icon name="cart-outline" class="info-icon" id="btn7"></ion-icon>
+        </div>
+      </div>
+      <div class="product">
+        <img src="img/item8.png" alt="PS4" />
+        <h2>PlayStation 4</h2>
+        <div class="info">
+          <p>$400</p>
+          <ion-icon name="cart-outline" class="info-icon" id="btn8"></ion-icon>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
